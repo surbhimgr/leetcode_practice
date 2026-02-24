@@ -4,7 +4,7 @@ Return any possible rearrangement of s or return "" if not possible.
 
 solution explaination - we put all the characters and the frequency of their occurences in a max heap. then we alternatively pop intems from maxheap and place them in our resultant string then decrease the frequency by one and push them back in the maxheap.
 we're using negative frequency values because python's inbuilt heap is min heap so to make it as max heap we use this trick of storing negative values. 
-If anything remains after while operation, use another if case to fill it. if the frequency of remaining item is more than one then we wont be able to store alternativly that means solution is not possible.
+If anything remains after while operation, use another if case to fill it. if the frequency of remaining item is more than one then we wont be able to store alternativly that means solution is not possible. no need to import libraries in leetcode.
 '''
 
 class Solution:
