@@ -36,10 +36,10 @@ class Solution:
                 return
 
             path.append(candidates[index])
-            dfs(index, remaining - candidates[index])
+            dfs(index, remaining - candidates[index])   # choosing the same candidate multiple times
             path.pop()
 
-            dfs(index + 1, remaining)
+            dfs(index + 1, remaining)  # going to next element
 
         dfs(0, target)
 
