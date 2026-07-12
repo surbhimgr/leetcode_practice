@@ -2,7 +2,13 @@
 
 There is only one repeated number in nums, return this repeated number.
 
-You must solve the problem without modifying the array nums and using only constant extra space. '''
+You must solve the problem without modifying the array nums and using only constant extra space. 
+
+Solution - Its like detecting cycle in a linked list. as there are n+1 integers ranging between 1 to n, the array values will be in same range as the indexes value and if we point the next array element by using 
+array value as index values then their must be 2 or more elements pointing to the same index. (look for notes in copy)
+
+Floyd's cycle detection alog - https://www.youtube.com/watch?v=S5TcPmTl6ww
+'''
 
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
